@@ -1,4 +1,8 @@
 
+# NWアダプタをdhcpに戻す
+& 'C:\Setup\setup\control\Reset-AdapterConfig.ps1'
+
+
 $ipaddrlist =@()
 
 $ipaddrlist += (Get-NetIPAddress).IPAddress |?{$_ -like "172.*"}
