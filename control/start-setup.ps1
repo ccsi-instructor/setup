@@ -3,6 +3,13 @@
 & 'C:\Setup\setup\control\Reset-AdapterConfig.ps1'
 
 
+
+
+# NWアダプタの名前を設定する
+& 'C:\Setup\setup\control\Set-AdapterName.ps1'
+
+
+
 $ipaddrlist =@()
 
 $ipaddrlist += (Get-NetIPAddress).IPAddress |?{$_ -like "172.*"}
