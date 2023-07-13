@@ -6,7 +6,7 @@
 
 
 # NWアダプタの名前を設定する
-& 'C:\Setup\setup\control\Set-AdapterName.ps1'
+& 'C:\Setup\setup\infra1\Set-AdapterName.ps1'
 
 
 
