@@ -10,6 +10,13 @@
 
 
 
+# noVNC‚ð‹N“®‚µ‚È‚¢
+& 'C:\Setup\setup\infra1\Disable-noVncTasks.ps1'
+
+
+
+
+
 $ipaddrlist =@()
 
 $ipaddrlist += (Get-NetIPAddress).IPAddress |?{$_ -like "172.*"}
