@@ -16,7 +16,6 @@
 
 
 
-
 $ipaddrlist =@()
 
 $ipaddrlist += (Get-NetIPAddress).IPAddress |?{$_ -like "172.*"}
