@@ -4,7 +4,7 @@
 
 
 # 管理接続作業用NWの優先度を下げる
-& 'C:\Setup\setup\control\Change-AdapterMetric.ps11'
+& 'C:\Setup\setup\control\Change-AdapterMetric.ps1'
 
 
 # コース情報を取得する
