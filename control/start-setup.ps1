@@ -2,6 +2,9 @@
 # NWアダプタをdhcpに戻す
 & 'C:\Setup\setup\control\Reset-AdapterConfig.ps1'
 
+# 管理接続作業用NWのIPアドレスをDNSサーバーに登録させない 
+& 'Disable-RegisterDnsRecordMgmtAdapter.ps1'
+
 
 # 管理接続作業用NWの優先度を下げる
 & 'C:\Setup\setup\control\Change-AdapterMetric.ps1'
