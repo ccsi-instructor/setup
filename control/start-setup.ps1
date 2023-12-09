@@ -10,6 +10,16 @@
 & 'C:\Setup\setup\control\Change-AdapterMetric.ps1'
 
 
+
+# NWアダプタの名前を設定する
+& 'C:\Setup\setup\infra1\Set-AdapterName.ps1'
+
+# noVNCを起動しない
+& 'C:\Setup\setup\infra1\Disable-noVncTasks.ps1'
+
+
+<# 2023.12.9 CourseCodeのInjectionが不調であるため一時コメントアウトする
+
 # コース情報を取得する
 $CourseCode = Get-Content C:\Setup\setup\log\CourseCode.txt
 
@@ -22,7 +32,7 @@ if( $CourseCode -eq 'infra1' )
     # noVNCを起動しない
     & 'C:\Setup\setup\infra1\Disable-noVncTasks.ps1'
 }
-
+#>
 
 
 
